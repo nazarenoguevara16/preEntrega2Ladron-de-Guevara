@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Monstserrat-Black";
+    src: url(../assets/fonts/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../assets/fonts/OpenSans-Bold.ttf);
+    
+}
+
+
+
+.nav-link{
+    font-family: "Monstserrat-Black";
+    color:white;
+}
+
+.nav-link:hover{
+    color: red
+    
+}
+
+.logo{
+    height: 75px;
+    width: 75px;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: end;
+}
+
+
+h1{
+    font-family: "Monstserrat-Black";
+    font-size: 40px;
+    text-align: center;
+}
+
+h2{
+    font-family: "OpenSans-Bold";
+}
+
+p{
+    font-family: "OpenSans-Bold";
+    font-size: 16px;
+}
+
+
+
+footer{
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+    bottom: 0px;
+}
+.piedepagina{
+    font-family: "OpenSans-Bold";
+    color: white;
+    
+}
+.container-md{
+    background-color: rgb(201, 50, 50);
+    
+}
+
+.info{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
