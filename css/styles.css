@@ -2,23 +2,41 @@
     margin:0;
     padding: 0;
     text-decoration: none;
+    box-sizing: 0;
 }
 
 @font-face {
     font-family: "Monstserrat-Black";
     src: url(../assets/fonts/Montserrat-Black.ttf);
+    
 }
 
 @font-face {
     font-family: "OpenSans-Bold";
     src: url(../assets/fonts/OpenSans-Bold.ttf);
     
+    
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
+#navegacion{
+    grid-area: nav;
+    background-color: aqua;
+    height: 100px;
+    width: 100%;
+}
+
+.section{
+    grid-area: section;
+}
 
 .nav-link{
-    font-family: "Monstserrat-Black";
+    font-family: "OpenSans-Bold";
     color:white;
 }
 
@@ -40,20 +58,29 @@
 
 h1{
     font-family: "Monstserrat-Black";
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
+    color: black
 }
 
 h2{
     font-family: "OpenSans-Bold";
+    font-size: 24px;
+    color: black
 }
 
 p{
     font-family: "OpenSans-Bold";
     font-size: 16px;
+    color: black
 }
 
-
+#contacto, #informacion {
+    padding: 100px;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
 
 footer{
     text-align: center;
@@ -61,19 +88,68 @@ footer{
     margin-top: auto;
     bottom: 0px;
 }
+
+#pie-de-pagina{
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
 .piedepagina{
     font-family: "OpenSans-Bold";
     color: white;
-    
 }
-.container-md{
-    background-color: rgb(201, 50, 50);
-    
+.contenedor{
+    background-color: rgb(187, 36, 36);
 }
 
 .info{
+    margin: 0px;
     margin-left: 20px;
     margin-right: 20px;
+
 }
+
+.header{
+    grid-area: header;
+}
+
+#noticias{
+    display: flex;
+    grid-area: noticias;
+    justify-content: center;
+    background-color: brown;
+    height: 250px;
+    width: auto;
+}
+
+
+#carrusel{
+    grid-area: carrusel;
+    justify-content: center;
+    display: flex;
+    background-color: blue;
+    height: 250px;
+    width: auto;
+}
+
+aside{
+    grid-area: aside;
+    background-color: yellow;
+    width: auto;
+}
+
+#grilla{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45vw 45vw 10vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "noticias noticias aside"
+    "carrusel carrusel aside"
+    "footer footer footer";
+}
+
+
 
 
