@@ -13,10 +13,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-danger bg-gradient">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand " href="/index.html">
-                    <img class="logo" src="../assets/img/indind.png" alt="">
+                    <img class="logo" src="../assets/img/indind.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -38,7 +38,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item " href="../pages/historia.html">Historia</a></li>
-                                <li><a class="dropdown-item " href="../pages/estadisticas.html">Estadisticas</a></li>
+                           
                                 <li><a class="dropdown-item " href="../pages/planteles.html">Planteles</a></li>
                             </ul>
                         </li>
@@ -47,58 +47,74 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-primary" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>
         <div class="contenedor container-fluid p-5" id="#contacto">
-            <div>
-                <h1>Contacto</h1>
-                <button class="volver">
-                    <a href="../index.html">Volver</a>
-                </button>
-            </div>
-            <div class="container-fluid">
-                <form>
-                    <div>
-                        <label for="">Nombre</label>
-                        <input type="text" placeholder="Introduzca su nombre...">
+          <h1 class="h1-formulario-contacto">FORMULARIO DE CONTACTO</h1>
+          <h3 class="h3-formulario-contacto">Rellene el formulario y espere su respuesta por correo electronico</h3>
+            <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="validationServer01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServer02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" >
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServerUsername" class="form-label">Correo electronico</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="text" class="form-control"required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationServer03" class="form-label">Comentario</label>
+                  <input type="text" class="form-control">
+              
+                </div>
+                <div class="col-md-3">
+                  <label for="validationServer04" class="form-label">Provincia</label>
+                  <select class="form-select">
+                    <option selected disabled value="">Seleccione provincia...</option>
+                    <option>Buenos Aires</option>
+                    <option>Cordoba</option>
+                    <option>San Juan</option>
+                    <option>San Luis</option>
+                    <option>Santa Fe</option>
+                    <option>Mendoza</option>
+                    <option>Otra</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationServer05" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" >
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                      Acepto envio
+                    </label>
+                    <div id="invalidCheck3Feedback" class="invalid-feedback">
+                      El formulario contiene mis datos correctos.
                     </div>
-                    <div>
-                        <label for="">Sexo</label>
-                        <input name="Sexo" type="radio" value="Masculino"> Masculino
-                        <input name="Sexo" type="radio" value="Femenino">Femenino
-                        <div>
-                            <div>
-                                <label for="">E.mail</label>
-                                <input type="email" placeholder="Introduzca su e-mail...">
-                            </div>
-                            <div>
-                                <label for="">Password</label>
-                                <input type="password" name="" id="" placeholder="Introduzca la contraseña...">
-                            </div>
-
-                            <div>
-                                <label for="Comentarios">Comentarios</label>
-                                <textarea name="" id="" cols="30" rows="10"
-                                    placeholder="Introduzca su comentario..."></textarea>
-                            </div>
-                            <button>Enviar</button>
-                            <input type="reset" value="Resetear">
-                </form>
-            </div>
-
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              </form>
         </div>
-
-
     </main>
 
-    <footer class=" bg-danger bg-gradient">
+    <footer>
         <span class="piedepagina ">©Derechos Reservados</span>
     </footer>
 

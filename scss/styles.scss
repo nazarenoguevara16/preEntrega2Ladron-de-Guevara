@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: 0;
+}
+
+$color-texto-hover-nav: rgb(214, 79, 79);
+$color-texto-hover-text: rgb(109, 109, 109);
+$color-textos-cuerpo: rgb(63, 63, 63);
+$color-textos-h1: rgb(43, 43, 43);
+$color-nav-footer:  rgb(199, 19, 19);
+$color-contenedor-principal: rgb(255, 255, 255);
+
+@font-face {
+    font-family: "Monstserrat-Black";
+    src: url(../assets/fonts/Montserrat-Black.ttf);
+    
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../assets/fonts/OpenSans-Bold.ttf);
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+nav{
+  background-color: $color-nav-footer;
+  
+  .nav-link{
+    font-family: "OpenSans-Bold";
+    color:white;   
+
+        &:hover{
+            color: $color-texto-hover-nav
+        }
+    }
+}
+
+.nav-vertical-historia{
+    background-image: linear-gradient(to bottom, red, white);
+}
+
+
+
+#img-estadio-historia{
+    width: 550px;
+    height: 300px;
+    transition: all;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#navegacion{
+    grid-area: nav;
+    background-color: aqua;
+    height: 100px;
+    width: 100%;
+}
+
+.contenedor-index{
+    height: 80%;
+    width: 80%;
+}
+
+.section{
+    grid-area: section;
+}
+
+.logo{
+    height: 75px;
+    width: 75px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: end;
+}
+
+
+h1{
+    font-family: "Monstserrat-Black";
+    font-size: 28px;
+    text-align: center;
+    color: $color-textos-h1;
+}
+
+.h1-formulario-contacto{
+    display: flex;
+    justify-content: left;
+}
+
+h2, h3{
+    font-family: "OpenSans-Bold";
+    font-size: 20px;
+    color: $color-textos-cuerpo;
+}
+
+p{
+    font-family: "OpenSans-Bold";
+    font-size: 16px;
+    color: $color-textos-cuerpo;
+}
+
+#contacto, #informacion {
+    padding: 100px;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+footer{
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+    bottom: 0px;
+    background-color: $color-nav-footer;
+
+    .piedepagina{
+        font-family: "OpenSans-Bold";
+        color: white;
+    }
+}
+
+#pie-de-pagina{
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
+#aviso-importante{
+    transform: rotate(5deg);
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.contenedor{
+    background-color: $color-contenedor-principal;
+    
+}
+
+.card-cancha{
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header{
+    grid-area: header;
+}
+
+#noticias{
+    display: flex;
+    grid-area: noticias;
+    justify-content: center;
+    background-color: brown;
+    height: 250px;
+    width: auto;
+}
+
+
+#carrusel{
+    grid-area: carrusel;
+    justify-content: center;
+    display: flex;
+    background-color: blue;
+    height: 250px;
+    width: auto;
+}
+
+aside{
+    grid-area: aside;
+    background-color: yellow;
+    width: auto;
+}
+
+#grilla{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45vw 45vw 10vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "noticias noticias aside"
+    "carrusel carrusel aside"
+    "footer footer footer";
+}
