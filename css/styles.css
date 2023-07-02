@@ -21,6 +21,12 @@
     opacity: 1;
   }
 }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 nav {
   background-color: rgb(199, 19, 19);
 }
@@ -31,40 +37,7 @@ nav .nav-link {
 nav .nav-link:hover {
   color: rgb(214, 79, 79);
 }
-
-.nav-vertical-historia {
-  background-image: linear-gradient(to bottom, red, white);
-}
-
-#img-estadio-historia {
-  width: 550px;
-  height: 300px;
-  transition: all;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-#navegacion {
-  grid-area: nav;
-  background-color: aqua;
-  height: 100px;
-  width: 100%;
-}
-
-.contenedor-index {
-  height: 80%;
-  width: 80%;
-}
-
-.section {
-  grid-area: section;
-}
-
-.logo {
+nav .logo {
   height: 75px;
   width: 75px;
   animation-name: aparecer;
@@ -74,6 +47,32 @@ body {
 .navbar-nav {
   display: flex;
   justify-content: end;
+}
+
+.nav-vertical-historia, .nav-vertical-info {
+  background-image: linear-gradient(to bottom, red, white);
+  text-align: left;
+}
+.nav-vertical-historia .items-historia, .nav-vertical-info .items-historia {
+  height: 50px;
+}
+.nav-vertical-historia .items-info, .nav-vertical-info .items-info {
+  color: white;
+  font-family: "OpenSans-Bold";
+}
+
+.contenedor {
+  background-color: rgb(255, 255, 255);
+}
+
+.contenedor-index {
+  height: 80%;
+  width: 80%;
+}
+
+.contiene-ambos {
+  display: flex;
+  justify-content: space-around;
 }
 
 h1 {
@@ -91,20 +90,13 @@ h1 {
 h2, h3 {
   font-family: "OpenSans-Bold";
   font-size: 20px;
-  color: rgb(63, 63, 63);
+  color: rgb(34, 33, 33);
 }
 
 p {
   font-family: "OpenSans-Bold";
   font-size: 16px;
-  color: rgb(63, 63, 63);
-}
-
-#contacto, #informacion {
-  padding: 100px;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
+  color: rgb(53, 51, 51);
 }
 
 footer {
@@ -113,26 +105,66 @@ footer {
   margin-top: auto;
   bottom: 0px;
   background-color: rgb(199, 19, 19);
+  display: inline;
+  justify-items: flex-end;
 }
-footer .piedepagina {
+footer .pie-de-pagina {
   font-family: "OpenSans-Bold";
   color: white;
+  display: flex;
+  justify-content: space-around;
 }
 
-#pie-de-pagina {
-  grid-area: footer;
-  background-color: blueviolet;
+.carousel-item {
+  transition: 0.5s ease;
+}
+.carousel-item .img-index {
+  height: 530px;
 }
 
-#aviso-importante {
-  transform: rotate(5deg);
-  animation-name: aparecer;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+.galeria-index {
+  display: flex;
+  width: 800px;
+  height: 470px;
+  justify-content: center;
+  padding-top: 10px;
+}
+.galeria-index .img-galeria {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.galeria-index .img-galeria:hover {
+  cursor: crosshair;
+  width: 400px;
+  opacity: 1;
+  filter: contrast(120%);
 }
 
-.contenedor {
-  background-color: rgb(255, 255, 255);
+#img-estadio-historia {
+  width: 550px;
+  height: 300px;
+  transition: all;
+}
+
+.tabla-goles {
+  display: flex;
+  justify-content: right;
+}
+
+#tarjetas-partidos, #carouselExampleDark {
+  width: 620px;
+  height: 250px;
+  display: flex;
+  justify-content: left;
+  margin-top: 0;
+}
+
+#tabla-goleadores {
+  width: 540px;
+  height: 210px;
 }
 
 .card-cancha {
@@ -144,6 +176,53 @@ footer .piedepagina {
   margin: 0px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.tarjetas-idolos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.tarjetas-idolos .card {
+  flex: 0 0 auto;
+}
+
+.imagen-idolo {
+  height: 250px;
+}
+
+#contacto, #informacion {
+  padding: 100px;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#aviso-importante {
+  transform: rotate(5deg);
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  width: 100px;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+#navegacion {
+  grid-area: nav;
+  background-color: aqua;
+  height: 100px;
+  width: 100%;
+}
+
+.section {
+  grid-area: section;
+}
+
+#pie-de-pagina {
+  grid-area: footer;
+  background-color: blueviolet;
 }
 
 .header {

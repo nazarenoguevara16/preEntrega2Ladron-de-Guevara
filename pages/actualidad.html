@@ -1,95 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand " href="/index.html">
-                    <img class="logo" src="../assets/img/indind.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item ">
-                            <a class="nav-link" aria-current="page" href="../pages/informacion.html">Informacion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="../pages/actualidad.html">Actualidad</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Archivo
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item " href="../pages/historia.html">Historia</a></li>
-                             
-                                <li><a class="dropdown-item " href="../pages/planteles.html">Planteles</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="../pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-primary" type="submit">Buscar</button>
-                    </form>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="/index.html">
+          <img class="logo" src="../assets/img/indind.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link" aria-current="page" href="../pages/informacion.html">Informacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../pages/actualidad.html">Actualidad</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Archivo
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="../pages/historia.html">Historia</a></li>
+
+                <li><a class="dropdown-item " href="../pages/planteles.html">Plantel</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="contenedor container-fluid text-center p-5" id="contenedor-actualidad">
+      <H1>ACTUALIDAD</H1>
+      <table class="table table-danger">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Competencia</th>
+            <th scope="col">Partidos</th>
+            <th scope="col">Resultado/Posicion</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider table-danger">
+          <tr>
+            <th scope="row">1</th>
+            <td>Liga Profesional</td>
+            <td>20</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Copa Argentina</td>
+            <td>2</td>
+            <td>16vos de Final</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="contiene-ambos">
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide m-0 p-0">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="card mb-3" id="tarjetas-partidos">
+                <img src="../assets/img/partido1.png" class="card-img-top" id="img-partidos-actualidad" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Liga Profesional</h5>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="contenedor container-fluid text-center p-5">
-            <H1>ACTUALIDAD</H1>
-            <table class="table table-danger">
-                <thead>
-                  <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Competencia</th>
-                    <th scope="col">Partidos</th>
-                    <th scope="col">Resultado/Posicion</th>
-                  </tr>
-                </thead>
-                <tbody class="table-group-divider table-danger">
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Liga Profesional</td>
-                    <td>20</td>
-                    <td>21</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Copa Argentina</td>
-                    <td>2</td>
-                    <td>16vos de Final</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div >
-                <img id="aviso-importante" src="../assets/img/aviso.png" alt="">
-                <p>Si queres informarte en profundidad acerca de la actualidad de Independiente, dirigite <a href="https://www.promiedos.com.ar/club=12" target="_blank" rel="noopener noreferrer">aqui</a></p>
               </div>
-        </div>   
-    </main> 
-    <footer>
-        <span class="piedepagina ">©Derechos Reservados</span>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="card mb-3" id="tarjetas-partidos">
+                <img src="../assets/img/partido2.png" class="card-img-top" id="img-partidos-actualidad" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Liga Profesional</h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3" id="tarjetas-partidos">
+                <img src="../assets/img/partido3.png" class="card-img-top" id="img-partidos-actualidad" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Liga Profesional</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="tabla-goles m-0 p-0">
+          <table class="table table-danger" id="tabla-goleadores">
+            <thead>
+              <tr>
+                <th scope="col">Jugador</th>
+                <th scope="col">Goles</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider table-danger">
+              <tr>
+                <td>Martin Cauteruccio</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Matias Gimenez</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Nicolas Vallejo</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Sergio Ortiz</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Ayrton Costa</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <table class="table table-danger">
+          <h2>MERCADO DE PASES</h2>
+          <thead>
+            <tr>
+              <th scope="col">Altas</th>
+              <th scope="col">Bajas</th>
+            </tr>
+          </thead>
+          <tbody class="table-danger">
+            <tr>
+              <td>Martin Cauteruccio</td>
+              <td>Juan Cazares</td>
+            </tr>
+            <tr>
+              <td>Matias Gimenez</td>
+              <td>Patricio Ostachuk</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Mauricio Cuero</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <h3>MAXIMOS IDOLOS</h3>
+      <div class="tarjetas-idolos">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/sss.jpg" class="card-img-top imagen-idolo" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ricardo Enrique Bochini</h5>
+            <p class="card-text">El "Bocha" es considerado el maximo idolo de Independiente, 
+              jugo toda su carrera en el club y le dio una inmensa cantidad de titulos. Actualmente
+            el estadio del Rojo lleva su nombre</p>
+            <a href="https://es.wikipedia.org/wiki/Ricardo_Enrique_Bochini" 
+            target="_blank" class="btn btn-primary" rel="noopener noreferrer">Mas Informacion</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/images.jpg" class="card-img-top imagen-idolo" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Miguel Angel Santoro</h5>
+            <p class="card-text">Uno de los mejores arqueros de la historia del club, leyenda del 
+              Rey de Copas, actualmente se encuentra trabajando en Independiente. Una de las tribunas
+            del estadio lleva su nombre</p>
+            <a href="https://es.wikipedia.org/wiki/Miguel_%C3%81ngel_Santoro" 
+            target="_blank" class="btn btn-primary" rel="noopener noreferrer">Mas Informacion</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/chivo.jpg" class="card-img-top imagen-idolo" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ricardo Pavoni</h5>
+            <p class="card-text">El uruguayo jugaba como lateral izquierdo, estuvo en el club
+             desde 1965 hasta 1976. Como se ve en la imagen, innumerable cantidad de titulos
+            obtenidos</p>
+            <a href="https://es.wikipedia.org/wiki/Ricardo_Pavoni" 
+            target="_blank" class="btn btn-primary" rel="noopener noreferrer">Mas Informacion</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/kun-aguero-rojo.jpg" class="card-img-top imagen-idolo" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sergio Aguero</h5>
+            <p class="card-text">El Kun es considerado el mejor jugador proveniente de las inferiores
+             de Independiente, reconocido mundialmente por increible carrera. A pesar de haber jugado
+            poco tiempo en el club, se volvio muy querido por los hinchas. Fue el jugador mas joven
+            en debutar en primera division en la historia del futbol argentino, solo 15 anos </p>
+            <a href="https://es.wikipedia.org/wiki/Kun_Ag%C3%BCero" 
+            target="_blank" class="btn btn-primary" rel="noopener noreferrer">Mas Informacion</a>
+          </div>
+        </div>
+        
+      </div>
+      <img id="aviso-importante" src="../assets/img/aviso.png" alt="">
+      <p>Si queres informarte
+        en profundidad acerca de la actualidad de Independiente, dirigite
+        <a href="https://www.promiedos.com.ar/club=12" target="_blank" rel="noopener noreferrer">aqui</a>
+      </p>
+    </div>
+  </main>
+  <footer>
+    <span class="piedepagina ">TodoRojo - ©Derechos Reservados</span>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
