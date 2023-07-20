@@ -123,13 +123,15 @@ footer{
     background-color: $color-nav-footer;
     display: inline;
     justify-items: flex-end;
-    .pie-de-pagina{
+    .piedepagina{
         font-family: "OpenSans-Bold";
         color: white;
         display: flex;
         justify-content: space-around;
     }
 }
+
+
 
 .carousel-item{
     transition: .5s ease;

@@ -108,7 +108,7 @@ footer {
   display: inline;
   justify-items: flex-end;
 }
-footer .pie-de-pagina {
+footer .piedepagina {
   font-family: "OpenSans-Bold";
   color: white;
   display: flex;
