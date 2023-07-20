@@ -261,4 +261,8 @@ aside {
   grid-template-areas: "nav nav nav" "noticias noticias aside" "carrusel carrusel aside" "footer footer footer";
 }
 
+.img {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
